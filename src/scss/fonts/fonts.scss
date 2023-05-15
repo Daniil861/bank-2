@@ -1,0 +1,32 @@
+@font-face {
+	font-family: Sofia;
+	font-display: swap;
+	src: url("../fonts/SofiaSansSemiCondensed-Medium.woff2") format("woff2"),
+		url("../fonts/SofiaSansSemiCondensed-Medium.woff") format("woff");
+	font-weight: 500;
+	font-style: normal;
+}
+@font-face {
+	font-family: Sofia;
+	font-display: swap;
+	src: url("../fonts/SofiaSansSemiCondensed-Light.woff2") format("woff2"),
+		url("../fonts/SofiaSansSemiCondensed-Light.woff") format("woff");
+	font-weight: 300;
+	font-style: normal;
+}
+@font-face {
+	font-family: Sofia;
+	font-display: swap;
+	src: url("../fonts/SofiaSansSemiCondensed-Regular.woff2") format("woff2"),
+		url("../fonts/SofiaSansSemiCondensed-Regular.woff") format("woff");
+	font-weight: 400;
+	font-style: normal;
+}
+@font-face {
+	font-family: Sofia;
+	font-display: swap;
+	src: url("../fonts/SofiaSansSemiCondensed-Bold.woff2") format("woff2"),
+		url("../fonts/SofiaSansSemiCondensed-Bold.woff") format("woff");
+	font-weight: 700;
+	font-style: normal;
+}
