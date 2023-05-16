@@ -13,6 +13,11 @@ document.addEventListener('click', (e) => {
 		welcomeScreen.classList.add('_hide');
 	}
 
+	if (targetElement.closest('.preloader__button')) {
+		document.querySelector('.preloader').classList.add('_hide');
+		sessionStorage.setItem('privacy', true);
+	}
+
 })
 
 
