@@ -1,27 +1,30 @@
 const modalItems = document.querySelectorAll('[data-modal]');
 const modal = document.querySelector('.modal');
-const modalId = modal.querySelector('.modal__id span');
 
-// Объявляем слушатель событий "клик"
+if (modal) {
+	const modalId = modal.querySelector('.modal__id span');
 
-document.addEventListener('click', (e) => {
-	let targetElement = e.target;
+	// Объявляем слушатель событий "клик"
 
-	if (targetElement.closest('.modal__button') && modal.classList.contains('_visible')) {
-		modal.classList.remove('_visible');
-	}
-})
+	document.addEventListener('click', (e) => {
+		let targetElement = e.target;
 
-
-if (modalItems.length) {
-	modalItems.forEach(button => {
-		button.addEventListener('click', () => {
-
-			if (button.dataset.id) {
-				showModal(button, modal, modalId)
-			}
-		})
+		if (targetElement.closest('.modal__button') && modal.classList.contains('_visible')) {
+			modal.classList.remove('_visible');
+		}
 	})
+
+
+	if (modalItems.length) {
+		modalItems.forEach(button => {
+			button.addEventListener('click', () => {
+
+				if (button.dataset.id) {
+					showModal(button, modal, modalId)
+				}
+			})
+		})
+	}
 }
 
 function showModal(button, item, itemId) {
