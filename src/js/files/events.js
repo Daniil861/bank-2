@@ -14,8 +14,9 @@ document.addEventListener('click', (e) => {
 	}
 
 	if (targetElement.closest('.preloader__button')) {
-		document.querySelector('.preloader').classList.add('_hide');
-		sessionStorage.setItem('privacy', true);
+		// document.querySelector('.preloader').classList.add('_hide');
+		// sessionStorage.setItem('privacy', true);
+		location.href = 'main.html';
 	}
 
 })

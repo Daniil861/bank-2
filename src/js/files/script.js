@@ -1,5 +1,5 @@
 
-const welcomeScreen = document.querySelector('.welcome');
+// const welcomeScreen = document.querySelector('.welcome');
 
 export function initStartData() {
 
@@ -7,9 +7,9 @@ export function initStartData() {
 
 // initStartData();
 
-if (sessionStorage.getItem('privacy')) {
-	document.querySelector('.preloader').classList.add('_hide');
-}
+// if (sessionStorage.getItem('privacy')) {
+// 	document.querySelector('.preloader').classList.add('_hide');
+// }
 
 
 
